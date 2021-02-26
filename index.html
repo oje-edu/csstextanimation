@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OJE.ooo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Animations</h1>
+    <section class="section_1">
+      <button>Kritzel</button>
+    </section>
+    <section class="section_2">
+      <button>Kritzel</button>
+    </section>
+  </div>
+
+  <svg>
+    <filter id='smudged'>
+      <feTurbulence numOctaves="2" seed="2" baseFrequency="0.02 0.05" />
+      <feDisplacementMap scale="10" in="SourceGraphic" />
+    </filter>
+  </svg>
+  
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
